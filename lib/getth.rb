@@ -27,7 +27,7 @@ module Getth
 		self[7]
 	end
 
-	def nineth
+	def ninth
 		self[8]
 	end
 
@@ -53,5 +53,4 @@ arr.third      =>  7
 arr.fourth     => 10
 arr.tenth      =>  6
 "Hello".second => "e"
-
 =end
