@@ -1,39 +1,10 @@
+require 'ordinalize'
+
 module Getth
-	def second
-		self[1]
-	end
-
-	def third
-		self[2]
-	end
-	
-	def fourth
-		self[3]
-	end
-	
-	def fifth
-		self[4]
-	end
-
-	def sixth
-		self[5]
-	end
-
-	def seventh
-		self[6]
-	end
-
-	def eighth
-		self[7]
-	end
-
-	def ninth
-		self[8]
-	end
-
-	def tenth
-		self[9]
-	end
+  #defines methods 'second', 'third'...'tenth' for retrieving values from strings/arrays
+  (2..10).each do |i|
+    define_method(i.ordinalize) { self[i.pred] }
+  end
 end
 
 class Array
