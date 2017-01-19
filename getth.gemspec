@@ -1,9 +1,10 @@
 Gem::Specification.new do |s|
 	s.name = 'getth'
-	s.version = '0.0.2'
+	s.version = '0.0.3'
+	s.add_runtime_dependency "ordinalize", [">= 0"]
 	s.date = '2017-01-19'
 	s.summary = 'Getth'
-	s.description = 'Extends Array and String classes to access indexed-elements from an object using first, second,...,ninth and tenth.'
+	s.description = 'This gem defines methods _first, second, third ... ninth, tenth_ for retrieving values from strings and arrays. The Array and String classes are monkey-patched with the module Getth.'
   s.authors = ["Sagar Pandya"]
   s.email = 'sarg@outlook.com'
   s.files = ["lib/getth.rb"]
