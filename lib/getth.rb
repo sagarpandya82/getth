@@ -1,7 +1,7 @@
 require 'ordinalize'
 
 module Getth
-  (1..10).each do |i|
+  (2..10).each do |i|
     define_method(i.ordinalize) { self[i.pred] }
   end
 end
@@ -14,7 +14,11 @@ end
 class String
   include Getth
   
-  def last
-    self[-1]
+  def first(n = 1)
+    self[0...n]
+  end
+  
+  def last(n = 1)
+    self[-n..-1]
   end
 end
