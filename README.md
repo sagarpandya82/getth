@@ -1,5 +1,5 @@
 ###Introduction
-This gem defines methods _first, second, third ... ninth, tenth_ for retrieving values from strings and arrays. The Array and String classes are monkey-patched with the module Getth. Core `Array` already includes a `last` instance method but since `String` doesn't so I've added that.
+This gem defines methods _first, second, third ... ninth, tenth_ for retrieving values from strings and arrays. The Array and String classes have been monkey-patched in order to achieve this. Core `Array` already includes a `last` instance method but since `String` does not, I have had to add it.
 
 ###With arrays
     arr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
