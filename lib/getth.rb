@@ -6,10 +6,15 @@ module Getth
   end
 end
 
+
 class Array
   include Getth
 end
 
 class String
   include Getth
+  
+  def last
+    self[-1]
+  end
 end

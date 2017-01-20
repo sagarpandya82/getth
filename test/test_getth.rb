@@ -19,4 +19,9 @@ class GetthTest < Minitest::Test
       assert_equal e, @str.send(i.ordinalize)
     end
   end
+  
+  def test_string_last
+    assert_equal "j", @str[-1]
+  end
+  
 end
