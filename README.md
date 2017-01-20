@@ -19,5 +19,4 @@ Core `Array` already includes a `last` instance method but since `String` doesn'
 
 ###To Do List
 
-* modify `first` to take an argument so a range of elements is returned
-* allow `last` to take an argument so a range of elements is returned
+* modify `first` and `last` to take an integer-argument so a range of elements is returned.
