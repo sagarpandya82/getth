@@ -29,6 +29,7 @@ class GetthTest < Minitest::Test
   def test_string_last
     assert_equal "j", @str.last
     assert_equal "hij", @str.last(3)
+    assert_equal "abcdefghij", @str.last(@str.size + 1)
   end
   
 end

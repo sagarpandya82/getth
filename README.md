@@ -37,4 +37,3 @@ This gem defines methods _first, second, third ... ninth, tenth_ for retrieving 
 ###To Do List
 
 * Update gem to work for > `tenth` < `last`.
-* Raise errors if arguments are invalid.
