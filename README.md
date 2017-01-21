@@ -1,6 +1,9 @@
+#Getth
+----
 [![Gem Version](https://badge.fury.io/rb/getth.svg)](https://badge.fury.io/rb/getth)
+
 ###Introduction
-This gem defines methods _first, second, third ... ninth, tenth_ for retrieving values from strings and arrays. The Array and String classes have been monkey-patched in order to achieve this. Core `Array` already includes a `last` instance method but since `String` does not, I have had to add it.
+This gem defines ordinal methods _first, second, third ... ninth, tenth & last_ for retrieving values from strings. Ruby Core already includes a `Array#first` and `Array#last` so only _second, third ... ninth & tenth_ have been added to the Array class.
 
 ###With arrays
     arr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
@@ -19,6 +22,8 @@ This gem defines methods _first, second, third ... ninth, tenth_ for retrieving 
     str = "abcdefghij"
     
     str.first      #=> "a"
+    str.first(2)   #=> "ab"
+    
     str.second     #=> "b"
     str.third      #=> "c"
     str.fourth     #=> "d"
@@ -29,8 +34,12 @@ This gem defines methods _first, second, third ... ninth, tenth_ for retrieving 
     str.ninth      #=> "i"
     str.tenth      #=> "j"
     
-    arr.last       #=>  "j"
-    arr.last(3)    #=>  ["h", "i", "j"]
+    str.last       #=> "j"
+    str.last(3)    #=> "hij"
+    
+Using `last(n)` where `n`> str.length mimics core `Array#last` by returning last(str.length):
+    
+    str.last(11)   #=> "abcdefghij"
 
 ###Dependencies
 [ordinalize gem](https://rubygems.org/gems/ordinalize)
@@ -41,4 +50,4 @@ This gem defines methods _first, second, third ... ninth, tenth_ for retrieving 
 
 ###Notes
 
-* From gem versions 0.0.2 to 0.0.5 the gemspec dates may be slightly wrong by a few days. Just omitted to update the date before builds.
+* gem versions 0.0.2 to 0.0.5 may have gemspec dates slightly out by a few days. Just omitted to update the date before builds. Has no bearing on functionality.
