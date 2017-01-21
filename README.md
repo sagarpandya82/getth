@@ -37,7 +37,7 @@ This gem defines ordinal methods _first, second, third ... ninth, tenth & last_ 
     str.last       #=> "j"
     str.last(3)    #=> "hij"
     
-Using `last(n)` where `n`> str.length mimics core `Array#last` by returning last(str.length):
+When `n`> `str.length`, `last(n)` mimics the behaviour of `Array#last` by returning `str`:
     
     str.last(11)   #=> "abcdefghij"
 
