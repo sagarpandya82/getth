@@ -18,6 +18,6 @@ class String
   end
   
   def last(n = 1)
-    n > self.size ? self[-self.size..-1] : self[-n..-1]
+    n > self.size ? self : self[-n..-1]
   end
 end
