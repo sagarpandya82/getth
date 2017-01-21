@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/getth.svg)](https://badge.fury.io/rb/getth)
 ###Introduction
 This gem defines methods _first, second, third ... ninth, tenth_ for retrieving values from strings and arrays. The Array and String classes have been monkey-patched in order to achieve this. Core `Array` already includes a `last` instance method but since `String` does not, I have had to add it.
 
