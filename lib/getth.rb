@@ -6,7 +6,6 @@ module Getth
   end
 end
 
-
 class Array
   include Getth
 end
