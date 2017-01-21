@@ -1,5 +1,5 @@
 #Getth
-----
+
 [![Gem Version](https://badge.fury.io/rb/getth.svg)](https://badge.fury.io/rb/getth)
 
 ###Introduction
